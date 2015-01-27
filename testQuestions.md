@@ -6,7 +6,7 @@
 
 * what does a DNS server do when you type "www.google.com" into an address bar?
 
-** I have no idea **
+** When the user types google.com into the search bar and clicks enter, a request is sent to a root DNS server that will then travel to an ISP to translate the requested url into an ip address. Once translated, it will be sent to the ip addess of the requested site, which will then return content to the client. **
 
 
 * What are some differences between a single page application and a multipage application? List one example of each.
@@ -16,9 +16,9 @@
 
 * Why do we use RESTful routes?
 
-** I still don't know what this is garhhh** 
+** REST stands for "Representational State Transfer." REST guidelines are used to make API's. These guidelines consists of methods such as "Get", "Post", "Delete", "Puts" and the like. RESTful routes are used to connect with various servers, and allow the ability to Create, Read, Update, or Delete data, also known as CRUD** 
 
 
 * What is an API key and why are they used?
 
-** An API key is an identification code provided by websites or companies to developers who are interested in utilizing their data.  **
+** An API key is an identification code provided by websites or companies to developers who are interested in utilizing their data. These keys are used to track and control how the data is being used. They are also used to provide access to certain individuals and groups. **
