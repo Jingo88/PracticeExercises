@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<!-- 
+	Redraw the canvas every 20 ms
+
+	Take a canvas drawing of a square, and redraw it every 20 ms with a slightly different position. -->
+<!-- 
+// var sayGoodMorning = function(){
+// 	console.log("Good Morning");
+// }
+// console.log("Hello");
+
+// setTimeout(sayGoodMorning, 2000);
+
+// console.log("Goodbye");
+
+var counter = 0;
+
+var sayHi = function(){
+	console.log("Hi");
+	counter++;
+	if(counter === 5) {
+		clearInterval(refreshIntervalID);
+	};
+}
+
+var refreshIntervalID = setInterval(sayHi, 500);
+
+-->
+
+<canvas id="the_canvas" width="400" height="400"></canvas>
+
+<script>
+
+	var canvas = document.getElementById("the_canvas");
+	var ctx = canvas.getContext('2d');
+var userNum1 = prompt("how many squares you want babe?");
+	userNum = parseInt(userNum1);
+var color = ["#c4120c", "rgba(100,200,50,1)", "blue"];
+var z = 0;
+var counter = 0;
+
+        ctx.fillStyle = "FF0000";
+        ctx.beginPath();
+        ctx.arc(ballX, ballY, ballRadius, 0, Math.PI*2, false);
+        closePath();
+        ctx.fill();
+
+// function squareMake(){
+// 	var x = Math.floor(Math.random()*(400 -1) +1);
+// 	var y = Math.floor(Math.random()*(400 -1) +1);
+
+// 	if (z === 3) {
+// 		z = 0;
+// 	} 
+// 	var acolor = color[z];
+
+
+// 	ctx.fillStyle = (acolor);
+// 	ctx.fillRect ( x , y ,30,30);
+// 	z++;
+// 	//this is working
+// 	counter++;
+// 	console.log(counter);
+// 	//this is not
+// 	if (counter === userNum) {
+// 		clearInterval(squareMake);
+// 	}
+// }
+
+// if (isNaN(userNum)) {
+// 	alert("Give me yo digits fool!");
+// } else {
+// 	counter++;
+// 	setInterval(squareMake, 200);
+// }
+
+    // var canvas = document.getElementById('the_canvas');
+    // var ctx = canvas.getContext('2d');
+    // var x = 0;
+
+    // var draw = function() {
+    // 	x++;
+    //    	ctx.fillStyle = "white";
+    // 	ctx.fillRect (0, 0, canvas.width, canvas.height);
+    // 	ctx.fillStyle = "red";
+   	// 	ctx.fillRect (x, 10, 55, 50);
+   	// 	if (x > canvas.width){
+   	// 		x=0;
+   	// 	}
+    // };
+
+    // setInterval(draw,20);
+    </script>
+</body>
+</html>

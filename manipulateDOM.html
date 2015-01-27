@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<!-- Part 4 -->
+
+<!--   <canvas id="canvas" width="1000" height="600"></canvas>
+
+  <button>Let's Start This Shit</button> -->
+
+<!-- Part 3 -->
+<!-- <img src=''> </img>
+
+<input type='radio' name='hamster' id='first'>first</input>
+<input type='radio' name='hamster' id='second'>second</input>
+<input type='radio' name='hamster' id='third'>third</input>
+
+<button>See your hamster!</button> -->
+<!-- Part 2 -->
+<h1> My Shit! </h1>
+	<ul>
+	</ul>
+	<input type='text' placeholder='add to list'></input>
+
+	<button> Submit </button>
+
+<!-- Part 1 -->
+<!-- 	<p>this is a paragraph</p>
+	<input type='text' placeholder="replace the paragraph">
+	</input>
+	<button> Submit</button> -->
+
+	<script>
+	//Part 4
+	// var canvas = document.getElementById("canvas");
+	// var ctx = canvas.getContext('2d');
+	// var w = canvas.width;
+	// var h = canvas.height;
+	// var start = document.querySelector('button');
+
+	// function drawSquare(){
+	// 	ctx.clearRect(0, 0, w, h);
+
+	// 	var x = Math.round(Math.random()*(1000 - 1)+1);
+	// 	var y = Math.round(Math.random()*(600 - 1)+1);
+
+	// 	ctx.fillStyle = "#a62226";
+	// 	ctx.fillRect(x, y, 15, 15);		
+	// };
+
+	// start.addEventListener('click', function(){
+	// 	setInterval(drawSquare,1000);
+	// });
+
+
+
+
+	//Part 3
+	// var img = document.querySelector('img');
+	// var one = document.getElementById('first');
+	// var two = document.getElementById('second');
+	// var three = document.getElementById('third');
+	// var button = document.querySelector('button');
+
+
+	// button.addEventListener('click', function(){
+
+	// 	console.log('bewbs');
+	// 	if (one.checked === true) {
+	// 		img.src = 'http://www.cutenessoverflow.com/wp-content/uploads/2014/04/Hamster2.jpg';
+	// 	} else if (two.checked === true) {
+	// 		img.src = 'http://www.tehcute.com/pics/201109/hamster-on-a-swing-big.jpg';
+	// 	} else if (three.checked === true) {
+	// 		img.src = 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9yfRVA06CDW5SKam-PtU4QBGYgkCCAVK4zeuJqdzHR0sUz7oY';
+	// 	}
+	// })
+
+	// one.addEventListener('click',function(){
+	// 	img.src = 'http://www.cutenessoverflow.com/wp-content/uploads/2014/04/Hamster2.jpg';
+	// 	console.log(one)
+	// })
+
+	// two.addEventListener('click', function(){
+	// 	img.src = 'http://www.tehcute.com/pics/201109/hamster-on-a-swing-big.jpg'
+	// })
+	
+	// three.addEventListener('click', function(){
+	// 	img.src = 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9yfRVA06CDW5SKam-PtU4QBGYgkCCAVK4zeuJqdzHR0sUz7oY'
+	// })
+
+	//Part 2
+		var button = document.querySelector('button');
+		var input = document.querySelector('input');
+		var ulist = document.querySelector('ul');
+		// var listItem = document.querySelector('li');
+
+		button.addEventListener('click', function(){
+			var li = document.createElement('li');
+			li.setAttribute('draggable', 'true');
+			li.addEventListener('click', function(){
+				ulist.removeChild(this);
+			})
+			li.innerText = input.value;
+			ulist.appendChild(li);
+		})
+
+		input.addEventListener('keydown', function(){
+			var key = event.which;
+			if (key === 13){
+			var li = document.createElement('li');
+			li.setAttribute('draggable', 'true');
+			li.addEventListener('click', function(){
+				ulist.removeChild(this);
+			})
+			li.innerText = input.value;
+			ulist.appendChild(li);
+			input.value = '';
+		}})
+
+
+
+	//Part 1	
+		// var button = document.querySelector('button');
+		// var para = document.querySelector('p');
+		// var input = document.querySelector('input');
+
+		// input.addEventListener('keyup', doKeyDown, true);
+
+		// function doKeyDown(){
+		// 	para.innerText = input.value;
+		// }
+	</script>
+	
+</body>
+</html>
