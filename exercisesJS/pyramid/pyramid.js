@@ -2,6 +2,8 @@ var numRows = process.argv[2];
 var i = 0
 
 //makes sure to put the blk and spaces variables inside the while loop
+//Each iteration of this loop is only for one of the rows in the pyramid. 
+//We put the variables in the while loop so they reset to zero at the next row iteration
 while (i < numRows) {
   var pyrblk = 0;
   var pyrspace = 0;
